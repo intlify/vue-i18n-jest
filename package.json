@@ -9,9 +9,24 @@
   "bugs": {
     "url": "https://github.com/kazupon/vue-i18n-jest/issues"
   },
+  "devDependencies": {
+    "@types/jest": "^24.0.23",
+    "@typescript-eslint/eslint-plugin": "^2.7.0",
+    "@typescript-eslint/parser": "^2.7.0",
+    "@typescript-eslint/typescript-estree": "^2.7.0",
+    "eslint": "^6.6.0",
+    "eslint-plugin-vue-libs": "^4.0.0",
+    "jest": "^24.9.0",
+    "opener": "^1.5.1",
+    "ts-jest": "^24.1.0",
+    "typescript": "^3.7.2"
+  },
   "engines": {
     "node": ">= 8"
   },
+  "files": [
+    "lib"
+  ],
   "homepage": "https://github.com/kazupon/vue-i18n-jest#readme",
   "keywords": [
     "i18n",
@@ -26,19 +41,13 @@
     "url": "git+https://github.com/kazupon/vue-i18n-jest.git"
   },
   "scripts": {
-    "lint": "eslint ./src --ext .ts",
     "build": "tsc -p .",
+    "clean": "rm -rf ./coverage && rm -rf ./lib/*.js*",
+    "coverage": "opener coverage/lcov-report/index.html",
+    "lint": "eslint ./src ./test --ext .ts",
+    "test": "npm run lint && npm run test:cover",
+    "test:cover": "npm run test:unit -- --coverage",
+    "test:unit": "jest --env node",
     "watch": "tsc -p . --watch"
-  },
-  "files": [
-    "lib"
-  ],
-  "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^2.7.0",
-    "@typescript-eslint/parser": "^2.7.0",
-    "@typescript-eslint/typescript-estree": "^2.7.0",
-    "eslint": "^6.6.0",
-    "eslint-plugin-vue-libs": "^4.0.0",
-    "typescript": "^3.7.2"
   }
 }

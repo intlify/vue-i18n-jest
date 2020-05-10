@@ -3,7 +3,15 @@ import * as path from 'path'
 import { parseComponent } from 'vue-template-compiler'
 import generate from '../src/generate'
 
-const files = ['default.vue', 'json.vue', 'yaml.vue', 'json5.vue']
+const files = [
+  'default.vue',
+  'json.vue',
+  'yaml.vue',
+  'json5.vue',
+  'json-locale-import.vue',
+  'json5-locale-import.vue',
+  'yaml-locale-import.vue'
+]
 const targets = files.map(file => {
   const sourcePath = path.resolve(__dirname, `./fixtures/${file}`)
 

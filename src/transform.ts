@@ -43,7 +43,7 @@ function jestProcess (
 
   let coding = ';\n'
   if (customBlocks) {
-    coding += generate(customBlocks)
+    coding += generate(customBlocks, sourcePath)
   }
 
   const retCode = code + coding

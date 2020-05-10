@@ -1,3 +1,6 @@
+import path from 'path'
+import fs from 'fs'
+
 import JSON5 from 'json5'
 import yaml from 'js-yaml'
 import { debug as Debug } from 'debug'
@@ -12,13 +15,17 @@ const defaultLang = 'json'
 
 const debug = Debug('vue-i18n-jest')
 
-export default function generate (blocks: SFCBlock[]) {
+export default function generate (blocks: SFCBlock[], sourcePath: string) {
   const base = `${VUE_OPTIONS}.${VUE_I18N_OPTION} = []`
   const codes = blocks.map(block => {
     if (block.type === 'i18n') {
       const lang = (block.attrs && block.attrs.lang) || defaultLang
       // const lang = block.attrs?lang ?? defaultLang
-      const data = convert(block.content, lang)
+      const content = (block.attrs && block.attrs.src)
+        ? fs.readFileSync(getAbsolutePath(block, sourcePath)).toString()
+        : block.content
+
+      const data = convert(content, lang)
       const value = JSON.stringify(JSON.parse(data))
         .replace(/\u2028/g, '\\u2028')
         .replace(/\u2029/g, '\\u2029')
@@ -44,4 +51,9 @@ function convert (source: string, lang: string): string {
     default:
       return source
   }
+}
+
+function getAbsolutePath (block: SFCBlock, sourcePath: string): string {
+  if (path.isAbsolute(block.attrs.src)) return block.attrs.src
+  return path.join(path.dirname(sourcePath), block.attrs.src)
 }

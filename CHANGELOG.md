@@ -1,3 +1,12 @@
+
+## v0.2.0 (2020-05-11)
+
+#### :star: Features
+* [#9](https://github.com/kazupon/vue-i18n-jest/pull/9) Feature add locale import ([@charlybrown03](https://github.com/charlybrown03))
+
+#### Committers: 1
+- Carlos Moreno ([@charlybrown03](https://github.com/charlybrown03))
+
 <a name="0.1.1"></a>
 ## [0.1.1](https://github.com/kazupon/vue-i18n-jest/compare/v0.1.0...v0.1.1) (2019-11-15)
 

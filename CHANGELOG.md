@@ -1,4 +1,13 @@
 
+## v0.2.1 (2020-05-11)
+
+#### :zap: Improvement Features
+* [#11](https://github.com/kazupon/vue-i18n-jest/pull/11) fix: ignore dist files ([@kazupon](https://github.com/kazupon))
+
+#### Committers: 1
+- kazuya kawaguchi ([@kazupon](https://github.com/kazupon))
+
+
 ## v0.2.0 (2020-05-11)
 
 #### :star: Features

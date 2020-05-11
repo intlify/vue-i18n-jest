@@ -1,5 +1,6 @@
 # :globe_with_meridians: vue-i18n-jest
 
+![Test](https://github.com/kazupon/vue-i18n-jest/workflows/Test/badge.svg)
 [![npm](https://img.shields.io/npm/v/vue-i18n-jest.svg)](https://www.npmjs.com/package/vue-i18n-jest)
 [![codecov](https://codecov.io/gh/kazupon/vue-i18n-jest/branch/master/graph/badge.svg)](https://codecov.io/gh/kazupon/vue-i18n-jest)
 

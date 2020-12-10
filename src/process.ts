@@ -28,7 +28,7 @@ export default function process ({ blocks, vueOptionsNamespace, filename }: Proc
   const i18nResources = blocks.map(block => {
     if (block.type !== 'i18n') return
 
-    const value = parseI18nBlocktoJSON(block, filename)
+    const value = parseI18nBlockToJSON(block, filename)
       .replace(/\u2028/g, '\\u2028') // LINE SEPARATOR
       .replace(/\u2029/g, '\\u2029') // PARAGRAPH SEPARATOR
       .replace(/\\/g, '\\\\')
@@ -51,31 +51,21 @@ export default function process ({ blocks, vueOptionsNamespace, filename }: Proc
  * @param block SFC block returned from `@vue/component-compiler-utils`
  * @param filename The SFC file being processed
  */
-function parseI18nBlocktoJSON (block: SFCCustomBlock, filename: string): string {
+function parseI18nBlockToJSON (block: SFCCustomBlock, filename: string): string {
   const lang = block.attrs && block.attrs.lang
   const src = block.attrs && block.attrs.src
   const content = src
     ? readFileSync(getAbsolutePath(src, filename)).toString()
     : block.content
 
-  if (lang) {
-    return convertToJSON(content, lang)
-  }
-
-  // <i18n> does not require lang attribute.
-  // So we have to try to parse the content as json first, then fall back to yaml
-  try {
-    return convertToJSON(content, 'json')
-  } catch {
-    return convertToJSON(content, 'yaml')
-  }
+  return convertToJSON(content, lang)
 }
 
 /**
  * Convert JSON/YAML/JSON5 to minified JSON string.
  * @param source JSON/YAML/JSON5 encoded string
  * @param lang Language used in `source`. Supported JSON, YAML or JSON5.
- * @returns {string} A minified JSON string if supported `lang`. otherwise raw `source`.
+ * @returns {string} A minified JSON string
  */
 function convertToJSON (source: string, lang: string): string {
   switch (lang) {
@@ -84,10 +74,8 @@ function convertToJSON (source: string, lang: string): string {
       return JSON.stringify(parseYAML(source))
     case 'json5':
       return JSON.stringify(parseJSON5(source))
-    case 'json':
-      return JSON.stringify(JSON.parse(source)) // minify
-    default:
-      return source
+    default: // fallback to 'json'
+      return JSON.stringify(JSON.parse(source))
   }
 }
 

@@ -4,7 +4,15 @@ import { parseComponent } from 'vue-template-compiler'
 
 import process from '../src/process'
 
-const files = ['default.vue', 'json.vue', 'yaml.vue', 'json5.vue']
+const files = [
+  'default.vue',
+  'json.vue',
+  'json-locale-import.vue',
+  'yaml.vue',
+  'yaml-locale-import.vue',
+  'json5.vue',
+  'json5-locale-import.vue'
+]
 
 describe('process', () => {
   test.each(files)('(%s) returns expected string', file => {

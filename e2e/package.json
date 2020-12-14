@@ -1,0 +1,21 @@
+{
+  "name": "e2e-test",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "vue": "^2.x",
+    "vue-i18n": "^8.21.0",
+    "vue-template-compiler": "^2.x"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.4",
+    "@babel/preset-env": "^7.11.0",
+    "@vue/test-utils": "^1.0.4",
+    "jest": "^26.x",
+    "vue-i18n-jest": "file:../",
+    "vue-jest": "^4.0.0-beta.3"
+  }
+}

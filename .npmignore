@@ -5,4 +5,5 @@
 coverage
 __snapshots__
 test
+e2e
 .vscode

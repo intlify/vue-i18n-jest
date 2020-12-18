@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`process (default.vue) returns expected string: default.vue 1`] = `
+"__vue__options__.__i18n = [
+'{\\"ja\\":{\\"hello\\":\\"こんにちは！\\"},\\"en\\":{\\"hello\\":\\"hello!\\"}}'
+]"
+`;
+
+exports[`process (json.vue) returns expected string: json.vue 1`] = `
+"__vue__options__.__i18n = [
+'{\\"ja\\":{\\"hello\\":\\"こんにちは！\\"},\\"en\\":{\\"hello\\":\\"hello!\\"}}'
+]"
+`;
+
+exports[`process (json-locale-import.vue) returns expected string: json-locale-import.vue 1`] = `
+"__vue__options__.__i18n = [
+'{\\"ja\\":{\\"hello\\":\\"こんにちは！\\"},\\"en\\":{\\"hello\\":\\"hello!\\"}}'
+]"
+`;
+
+exports[`process (json5.vue) returns expected string: json5.vue 1`] = `
+"__vue__options__.__i18n = [
+'{\\"ja\\":{\\"hello\\":\\"こんにちは！\\"},\\"en\\":{\\"hello\\":\\"hello!\\"}}'
+]"
+`;
+
+exports[`process (json5-locale-import.vue) returns expected string: json5-locale-import.vue 1`] = `
+"__vue__options__.__i18n = [
+'{\\"ja\\":{\\"hello\\":\\"こんにちは！\\"},\\"en\\":{\\"hello\\":\\"hello!\\"}}'
+]"
+`;
+
+exports[`process (yaml.vue) returns expected string: yaml.vue 1`] = `
+"__vue__options__.__i18n = [
+'{\\"ja\\":{\\"hello\\":\\"こんにちは！\\"},\\"en\\":{\\"hello\\":\\"hello!\\"}}'
+]"
+`;
+
+exports[`process (yaml-locale-import.vue) returns expected string: yaml-locale-import.vue 1`] = `
+"__vue__options__.__i18n = [
+'{\\"ja\\":{\\"hello\\":\\"こんにちは！\\"},\\"en\\":{\\"hello\\":\\"hello!\\"}}'
+]"
+`;

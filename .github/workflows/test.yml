@@ -26,3 +26,5 @@ jobs:
         run: yarn install
       - name: Test
         run: yarn test
+      - name: Test (end-to-end)
+        run: yarn test:e2e

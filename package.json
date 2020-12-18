@@ -24,12 +24,9 @@
     }
   },
   "dependencies": {
-    "@vue/cli-plugin-unit-jest": "^4.0.5",
     "debug": "^4.1.1",
     "js-yaml": "^3.13.1",
-    "json5": "^2.1.1",
-    "vue-jest": "^3.0.5",
-    "vue-template-compiler": "^2.5"
+    "json5": "^2.1.1"
   },
   "devDependencies": {
     "@types/debug": "^4.1.5",
@@ -49,15 +46,13 @@
     "shipjs": "^0.18.4",
     "ts-jest": "^24.0.0",
     "typescript": "^3.8.3",
-    "vue": "^2.5"
+    "vue": "^2.5",
+    "vue-template-compiler": "^2.5"
   },
   "engines": {
     "node": ">= 8"
   },
-  "files": [
-    "lib",
-    "jest-preset.js"
-  ],
+  "files": ["lib"],
   "homepage": "https://github.com/kazupon/vue-i18n-jest#readme",
   "keywords": [
     "i18n",
@@ -69,6 +64,7 @@
   "main": "./lib/index.js",
   "peerDependencies": {
     "vue": "^2.5",
+    "vue-jest": "^4.0.0-beta.3",
     "vue-template-compiler": "^2.5"
   },
   "repository": {
@@ -85,6 +81,7 @@
     "release:trigger": "shipjs trigger",
     "test": "npm run lint && npm run test:cover",
     "test:cover": "npm run test:unit -- --coverage",
+    "test:e2e": "yarn build && yarn --cwd ./e2e install && yarn --cwd ./e2e test",
     "test:unit": "jest --env node",
     "watch": "tsc -p . --watch"
   }

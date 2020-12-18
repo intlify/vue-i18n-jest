@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`/components merges data blocks 1`] = `
+<p>
+  hello world!
+</p>
+`;
+
+exports[`/components processes SFC with i18n JSON in external src attribute 1`] = `
+<p>
+  Hello i18n in SFC!
+</p>
+`;
+
+exports[`/components processes SFC with i18n JSON inline custom block 1`] = `
+<p>
+  Hello i18n in SFC!
+</p>
+`;
+
+exports[`/components processes SFC with i18n JSON5 inline custom block 1`] = `
+<p>
+  Hello "i18n" in SFC!
+</p>
+`;
+
+exports[`/components processes SFC with i18n Yaml Inline 1`] = `
+<p>
+  hello world!
+</p>
+`;

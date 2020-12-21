@@ -1,13 +1,13 @@
 {
   "name": "vue-i18n-jest",
-  "description": "vue-jest wrapper for i18n custom blocks",
+  "description": "vue-jest transformer for i18n custom blocks",
   "version": "0.2.1",
   "author": {
     "name": "kazuya kawaguchi",
     "email": "kawakazu80@gmail.com"
   },
   "bugs": {
-    "url": "https://github.com/kazupon/vue-i18n-jest/issues"
+    "url": "https://github.com/intlify/vue-i18n-jest/issues"
   },
   "changelog": {
     "labels": {
@@ -53,7 +53,7 @@
     "node": ">= 10"
   },
   "files": ["lib"],
-  "homepage": "https://github.com/kazupon/vue-i18n-jest#readme",
+  "homepage": "https://github.com/intlify/vue-i18n-jest#readme",
   "keywords": [
     "i18n",
     "jest",
@@ -69,7 +69,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kazupon/vue-i18n-jest.git"
+    "url": "git+https://github.com/intlify/vue-i18n-jest.git"
   },
   "scripts": {
     "build": "tsc -p .",

@@ -43,14 +43,14 @@
     "jest": "^24.0.0",
     "lerna-changelog": "^1.0.1",
     "opener": "^1.5.1",
-    "shipjs": "^0.18.4",
+    "shipjs": "^0.23.0",
     "ts-jest": "^24.0.0",
     "typescript": "^3.8.3",
     "vue": "^2.5",
     "vue-template-compiler": "^2.5"
   },
   "engines": {
-    "node": ">= 8"
+    "node": ">= 10"
   },
   "files": ["lib"],
   "homepage": "https://github.com/kazupon/vue-i18n-jest#readme",

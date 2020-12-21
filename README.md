@@ -4,7 +4,9 @@
 [![npm](https://img.shields.io/npm/v/vue-i18n-jest.svg)](https://www.npmjs.com/package/vue-i18n-jest)
 [![codecov](https://codecov.io/gh/kazupon/vue-i18n-jest/branch/master/graph/badge.svg)](https://codecov.io/gh/kazupon/vue-i18n-jest)
 
-vue-jest wrapper for i18n custom blocks
+vue-jest transformer for i18n custom blocks
+
+> :warning: NOTE: This transformer is for `vue-jest@v4`
 
 ## :cd: Installation
 
@@ -26,15 +28,15 @@ To define vue-i18n-jest as a transformer for your .vue files that have i18n cust
 
 if you've already setup vue-jest, You can change it as follows:
 
-```diff
-{
-  "jest": {
-    // ...
-    "transform": {
--     "^.+\\.vue$": "vue-jest"
-+     "^.+\\.vue$": "vue-i18n-jest"
-    },
-    // ....
+```js
+module.exports = {
+  globals: {
+    'vue-jest': {
+      transform: {
+        'i18n': require('vue-i18n-jest')
+      }
+    }
+  }
 }
 ```
 

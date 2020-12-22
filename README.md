@@ -33,7 +33,7 @@ module.exports = {
   globals: {
     'vue-jest': {
       transform: {
-        'i18n': require('vue-i18n-jest')
+        'i18n': 'vue-i18n-jest'
       }
     }
   }

@@ -17,3 +17,7 @@ export default {
   }
 }
 </i18n>
+
+<other>
+should be ignored
+</other>

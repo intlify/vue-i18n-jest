@@ -30,6 +30,8 @@ exports[`process (json5-src-import.vue) returns expected string: json5-src-impor
 ]"
 `;
 
+exports[`process (no-i18n.vue) returns expected string: no-i18n.vue 1`] = `""`;
+
 exports[`process (yaml.vue) returns expected string: yaml.vue 1`] = `
 "__vue__options__.__i18n = [
 '{\\"ja\\":{\\"hello\\":\\"こんにちは！\\"},\\"en\\":{\\"hello\\":\\"hello!\\"}}'

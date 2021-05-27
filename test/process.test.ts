@@ -5,6 +5,7 @@ import { parseComponent } from 'vue-template-compiler'
 import process from '../src/process'
 
 const files = [
+  'no-i18n.vue',
   'default.vue',
   'json.vue',
   'json-src-import.vue',

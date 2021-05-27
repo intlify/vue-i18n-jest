@@ -9,10 +9,13 @@ const files = [
   'default.vue',
   'json.vue',
   'json-src-import.vue',
+  'json-locale.vue',
   'yaml.vue',
   'yaml-src-import.vue',
+  'yaml-locale.vue',
   'json5.vue',
-  'json5-src-import.vue'
+  'json5-src-import.vue',
+  'json5-locale.vue'
 ]
 
 describe('process', () => {

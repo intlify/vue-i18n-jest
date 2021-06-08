@@ -53,29 +53,35 @@ export default function process ({ blocks, vueOptionsNamespace, filename }: Proc
  */
 function parseI18nBlockToJSON (block: SFCCustomBlock, filename: string): string {
   const lang = block.attrs && block.attrs.lang
+  const locale = block.attrs && block.attrs.locale
   const src = block.attrs && block.attrs.src
   const content = src
     ? readFileSync(getAbsolutePath(src, filename)).toString()
     : block.content
 
-  return convertToJSON(content, lang)
+  return convertToJSON(content, lang, locale)
 }
 
 /**
  * Convert JSON/YAML/JSON5 to minified JSON string.
  * @param source JSON/YAML/JSON5 encoded string
  * @param lang Language used in `source`. Supported JSON, YAML or JSON5.
+ * @param locale Attribute "locale" on <i18n> block will be added.
  * @returns {string} A minified JSON string
  */
-function convertToJSON (source: string, lang: string): string {
+function convertToJSON (source: string, lang: string, locale: string): string {
+  const stringify = locale
+    ? (parseResult: any) => JSON.stringify({ [locale]: parseResult })
+    : JSON.stringify
+
   switch (lang) {
     case 'yaml':
     case 'yml':
-      return JSON.stringify(parseYAML(source))
+      return stringify(parseYAML(source))
     case 'json5':
-      return JSON.stringify(parseJSON5(source))
+      return stringify(parseJSON5(source))
     default: // fallback to 'json'
-      return JSON.stringify(JSON.parse(source))
+      return stringify(JSON.parse(source))
   }
 }
 

@@ -5,13 +5,17 @@ import { parseComponent } from 'vue-template-compiler'
 import process from '../src/process'
 
 const files = [
+  'no-i18n.vue',
   'default.vue',
   'json.vue',
-  'json-locale-import.vue',
+  'json-src-import.vue',
+  'json-locale.vue',
   'yaml.vue',
-  'yaml-locale-import.vue',
+  'yaml-src-import.vue',
+  'yaml-locale.vue',
   'json5.vue',
-  'json5-locale-import.vue'
+  'json5-src-import.vue',
+  'json5-locale.vue'
 ]
 
 describe('process', () => {

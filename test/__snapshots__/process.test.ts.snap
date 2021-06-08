@@ -12,7 +12,14 @@ exports[`process (json.vue) returns expected string: json.vue 1`] = `
 ]"
 `;
 
-exports[`process (json-locale-import.vue) returns expected string: json-locale-import.vue 1`] = `
+exports[`process (json-locale.vue) returns expected string: json-locale.vue 1`] = `
+"__vue__options__.__i18n = [
+'{\\"ja\\":{\\"hello\\":\\"こんにちは！\\"}}',
+'{\\"en\\":{\\"hello\\":\\"hello!\\"}}'
+]"
+`;
+
+exports[`process (json-src-import.vue) returns expected string: json-src-import.vue 1`] = `
 "__vue__options__.__i18n = [
 '{\\"ja\\":{\\"hello\\":\\"こんにちは！\\"},\\"en\\":{\\"hello\\":\\"hello!\\"}}'
 ]"
@@ -24,11 +31,20 @@ exports[`process (json5.vue) returns expected string: json5.vue 1`] = `
 ]"
 `;
 
-exports[`process (json5-locale-import.vue) returns expected string: json5-locale-import.vue 1`] = `
+exports[`process (json5-locale.vue) returns expected string: json5-locale.vue 1`] = `
+"__vue__options__.__i18n = [
+'{\\"ja\\":{\\"hello\\":\\"こんにちは！\\"}}',
+'{\\"en\\":{\\"hello\\":\\"hello!\\"}}'
+]"
+`;
+
+exports[`process (json5-src-import.vue) returns expected string: json5-src-import.vue 1`] = `
 "__vue__options__.__i18n = [
 '{\\"ja\\":{\\"hello\\":\\"こんにちは！\\"},\\"en\\":{\\"hello\\":\\"hello!\\"}}'
 ]"
 `;
+
+exports[`process (no-i18n.vue) returns expected string: no-i18n.vue 1`] = `""`;
 
 exports[`process (yaml.vue) returns expected string: yaml.vue 1`] = `
 "__vue__options__.__i18n = [
@@ -36,7 +52,14 @@ exports[`process (yaml.vue) returns expected string: yaml.vue 1`] = `
 ]"
 `;
 
-exports[`process (yaml-locale-import.vue) returns expected string: yaml-locale-import.vue 1`] = `
+exports[`process (yaml-locale.vue) returns expected string: yaml-locale.vue 1`] = `
+"__vue__options__.__i18n = [
+'{\\"ja\\":{\\"hello\\":\\"こんにちは！\\"}}',
+'{\\"en\\":{\\"hello\\":\\"hello!\\"}}'
+]"
+`;
+
+exports[`process (yaml-src-import.vue) returns expected string: yaml-src-import.vue 1`] = `
 "__vue__options__.__i18n = [
 '{\\"ja\\":{\\"hello\\":\\"こんにちは！\\"},\\"en\\":{\\"hello\\":\\"hello!\\"}}'
 ]"

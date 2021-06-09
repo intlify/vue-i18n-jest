@@ -2,11 +2,15 @@
 
 [![Test](https://github.com/kazupon/vue-i18n-jest/workflows/Test/badge.svg)](https://github.com/kazupon/vue-i18n-jest/workflows/Test/badge.svg)
 [![npm](https://img.shields.io/npm/v/vue-i18n-jest.svg)](https://www.npmjs.com/package/vue-i18n-jest)
-[![codecov](https://codecov.io/gh/kazupon/vue-i18n-jest/branch/master/graph/badge.svg)](https://codecov.io/gh/kazupon/vue-i18n-jest)
 
 vue-jest transformer for i18n custom blocks
 
-> :warning: NOTE: This transformer is for `vue-jest@v4`
+## :warning: NOTICE
+`v2.x or later` is for [vue-i18n-next](https://github.com/intlify/vue-i18n-next) (Vue 3.x)
+
+If you want to use for [vue-i18n@v8.x](https://github.com/kazupon/vue-i18n) (Vue 2.x), use the `v1.x`
+
+This transformer is for `vue-jest@v5.x`
 
 ## :cd: Installation
 

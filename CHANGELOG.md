@@ -1,3 +1,16 @@
+
+## v1.1.0 (2021-06-09)
+
+#### :star: Features
+* [#29](https://github.com/intlify/vue-i18n-jest/pull/29) Add support for locale attribute on i18n block ([@wolfgangwalther](https://github.com/wolfgangwalther))
+
+#### :boom: Breaking Change
+* [#32](https://github.com/intlify/vue-i18n-jest/pull/32) drop node v10 ([@kazupon](https://github.com/kazupon))
+
+#### Committers: 2
+- Wolfgang Walther ([@wolfgangwalther](https://github.com/wolfgangwalther))
+- kazuya kawaguchi ([@kazupon](https://github.com/kazupon))
+
 Version 9 of Highlight.js has reached EOL and is no longer supported.
 Please upgrade or ask whatever dependency you are using to upgrade.
 https://github.com/highlightjs/highlight.js/issues/2877

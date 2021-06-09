@@ -11,12 +11,6 @@
 - Wolfgang Walther ([@wolfgangwalther](https://github.com/wolfgangwalther))
 - kazuya kawaguchi ([@kazupon](https://github.com/kazupon))
 
-Version 9 of Highlight.js has reached EOL and is no longer supported.
-Please upgrade or ask whatever dependency you are using to upgrade.
-https://github.com/highlightjs/highlight.js/issues/2877
-
-
-
 ## v0.2.1 (2020-05-11)
 
 #### :bug: Bug Fixes

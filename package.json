@@ -1,7 +1,7 @@
 {
   "name": "vue-i18n-jest",
   "description": "vue-jest transformer for i18n custom blocks",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "author": {
     "name": "kazuya kawaguchi",
     "email": "kawakazu80@gmail.com"

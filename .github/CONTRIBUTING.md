@@ -1,8 +1,11 @@
 # vue-i18n-jest Contributing Guide
 
-- [Issue Reporting Guidelines](#issue-reporting-guidelines)
-- [Pull Request Guidelines](#pull-request-guidelines)
-- [Development Setup](#development-setup)
+- [vue-i18n-jest Contributing Guide](#vue-i18n-jest-contributing-guide)
+  - [Issue Reporting Guidelines](#issue-reporting-guidelines)
+  - [Pull Request Guidelines](#pull-request-guidelines)
+    - [Work Step Example](#work-step-example)
+  - [Development Setup](#development-setup)
+    - [Commonly used NPM scripts](#commonly-used-npm-scripts)
 
 ## Issue Reporting Guidelines
 
@@ -20,7 +23,9 @@
 
 ## Pull Request Guidelines
 
-- Checkout a topic branch from the `master` branch.
+- Checkout a topic branch from the `master` or `maintain-v1` branch.
+  - `master` branch: for Vue 3
+  - `maintain-v1` branch: for Vue 2
 
 - It's OK to have multiple small commits as you work on the PR - we will let GitHub automatically squash it before merging.
 

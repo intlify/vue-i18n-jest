@@ -1,4 +1,13 @@
 
+## v1.1.1 (2021-10-21)
+
+#### :zap: Improvement Features
+* [#39](https://github.com/intlify/vue-i18n-jest/pull/39) fix: Remove definition of vue-jest as peerDeps ([@afontcu](https://github.com/afontcu))
+
+#### Committers: 1
+- Adrià Fontcuberta ([@afontcu](https://github.com/afontcu))
+
+
 ## v1.1.0 (2021-06-09)
 
 #### :star: Features

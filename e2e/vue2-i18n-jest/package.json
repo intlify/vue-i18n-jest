@@ -15,7 +15,7 @@
     "@babel/preset-env": "^7.11.0",
     "@vue/test-utils": "^1.0.4",
     "jest": "^26.x",
-    "vue-i18n-jest": "file:../",
+    "vue-i18n-jest": "workspace:1.*",
     "vue-jest": "^4.0.0-beta.3"
   }
 }

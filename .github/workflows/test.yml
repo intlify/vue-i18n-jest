@@ -26,13 +26,17 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2.0.1
+        with:
+          version: 6.15.1
       - name: Setup Node.js ${{ matrix.node }}
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node }}
       - name: Install
-        run: yarn install
+        run: pnpm install
       - name: Test
-        run: yarn test
+        run: pnpm test
       - name: Test (end-to-end)
-        run: yarn test:e2e
+        run: pnpm test:1.x:e2e

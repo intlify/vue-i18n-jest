@@ -16,6 +16,6 @@
     "@vue/test-utils": "^1.0.4",
     "jest": "^26.x",
     "vue-i18n-jest": "file:../",
-    "vue-jest": "^4.0.0-beta.3"
+    "vue-jest": "^5.0.0-alpha.10"
   }
 }

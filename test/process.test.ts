@@ -24,7 +24,7 @@ describe('process', () => {
     const fileContent = readFileSync(filePath).toString()
     const { customBlocks: blocks } = parseComponent(fileContent)
 
-    const code = process({ blocks, vueOptionsNamespace: '__vue__options__', filename: filePath })
+    const code = process({ blocks, componentNamespace: 'Component', filename: filePath })
 
     expect(code).toMatchSnapshot(file)
   })
